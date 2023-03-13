@@ -20,6 +20,7 @@
 .mobile-login-reg .btn-login,
 .mobile-login-reg .btn-reg {
   width: 100%;
+  font-weight: normal;
 }
 
 @keyframes hideNav {
