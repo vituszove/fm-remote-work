@@ -1,0 +1,94 @@
+
+
+.hide-mobile-nav {
+  width: 0;
+  position: absolute;
+  animation: hideNav 0.2s ease-in;
+  background: #fff;
+  height: 100vh;
+  right: 0;
+  padding: 0;
+}
+
+.hide-mobile-nav .mask{
+    display: none;
+}
+.hide-mobile-nav .mobile-login-reg {
+  display: none;
+}
+
+.mobile-login-reg .btn-login,
+.mobile-login-reg .btn-reg {
+  width: 100%;
+}
+
+@keyframes hideNav {
+  from {
+    width: 13rem;
+    padding: 0 1rem 0 1.28rem;
+  }
+  to {
+    width: 0;
+    padding: 0;
+  }
+}
+
+.mobile-nav-item {
+  margin-bottom: 1.67rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.mobile-nav-item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.mobile-nav-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 3.78rem;
+  margin-bottom: 1rem;
+}
+
+.mobile-nav-label {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.mobile-nav-submenu {
+  height: 0;
+  overflow: hidden;
+  transform:translateY(-20%);
+  /* transition: transform 0.2s ease-in; */
+}
+
+.active-submenu {
+  height: fit-content;
+  overflow: hidden;
+  transform: translateY(0);
+  transition: transform 0.2s ease-in;
+}
+
+.mobile-nav-submenu .nav-submenu-item {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 1.3rem;
+  font-size: 0.9rem;
+}
+.mobile-nav-submenu .nav-submenu-item:nth-child(1) {
+  margin-top: 2rem;
+}
+
+.ic-nav-close {
+  background: url("../../../resources/icon-close-menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1.5rem;
+  width: 1.5rem;
+}

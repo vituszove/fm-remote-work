@@ -1,0 +1,120 @@
+.landing-page {
+  /* padding: 3.83rem 9.17rem; */
+  padding: 4.3vw 10.2vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-landing-top {
+  margin-top: 6.5rem;
+}
+
+.title {
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  width: 31.69rem;
+  line-height: 1;
+}
+
+.sub-content {
+  color: #616161;
+  width: 26.44rem;
+  font-size: 1.1rem;
+  text-align: justify;
+  margin: 4rem 0 3rem;
+  line-height: 1.5;
+}
+
+.learn-btn {
+  width: 9rem;
+  height: 3.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: #151515;
+  color: #fff;
+}
+
+.learn-btn:hover {
+  background: #fff;
+  color: #151515;
+}
+
+.hero-img {
+  height: 40rem;
+  width: 30rem;
+  background: url("../../resources/image-hero-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.client-container {
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.client-logo {
+  margin-right: 2.3rem;
+}
+@media screen and (max-width: 414px) {
+  .landing-page {
+    flex-direction: column-reverse;
+    padding: 0 0 2rem 0;
+  }
+  .left-landing-top {
+    margin: 0 1.11rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-img {
+    background: url("../../resources/image-hero-mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 19rem;
+    width: 100%;
+  }
+  .title {
+    font-size: 2.2rem;
+    width: 100%;
+    margin: 2rem 0 1.6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sub-content {
+    font-size: 0.95rem;
+    text-align: center;
+    margin: 0 1.17rem;
+    width: 100%;
+  }
+  .learn-btn{
+    margin: 1.78rem 0 2.56rem 0;
+    height: 2.72rem;
+    width: 7.61rem;
+    font-size:  0.95;
+  }
+  .client-container{
+    margin: 0 1rem;
+    justify-content: center;
+  }
+  .client-logo {
+    margin-right: 1.3rem;
+    width: 4rem;
+  }
+
+  .client-logo:nth-last-child(1){
+    margin-right: 0;
+  }
+}
